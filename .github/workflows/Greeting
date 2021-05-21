@@ -1,0 +1,17 @@
+name: Hello from saraswathi
+
+on: push
+
+jobs:
+  Build-job:
+    name: test-job
+    runs-on: centos
+    steps:
+      - name: Print a hello
+        env:
+          MY_VAR: Hi here is saraswathi
+          FIRST_NAME: saru
+          MIDDLE_NAME: hello
+          LAST_NAME: p
+        run: |
+          echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
