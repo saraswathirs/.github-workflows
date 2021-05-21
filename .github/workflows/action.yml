@@ -2,7 +2,7 @@ name: Build & Deploy
 on:
   push:
     branches:
-      - master
+      - saraswathi
 jobs:
   job1:
     runs-on: ubuntu-latest
